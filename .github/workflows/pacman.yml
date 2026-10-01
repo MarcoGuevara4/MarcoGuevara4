@@ -23,6 +23,7 @@ jobs:
         uses: abozanona/pacman-contribution-graph@main
         with:
           github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.GH_STATS_TOKEN }}
           games: "pacman"
 
       - name: Push generated files to pacman-output branch
