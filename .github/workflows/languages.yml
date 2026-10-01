@@ -19,18 +19,24 @@ jobs:
     timeout-minutes: 5
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Generate languages card
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false
-          path: dist/languages.svg
+          path: profile/languages.svg
           token: ${{ secrets.GH_STATS_TOKEN }}
 
-      - name: Push generated files to languages-output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: languages-output
-          build_dir: dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit languages card
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add profile/languages.svg
+
+          git diff --cached --quiet || git commit -m "Update languages card"
+
+          git push
