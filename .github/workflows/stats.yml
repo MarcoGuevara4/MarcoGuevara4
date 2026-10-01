@@ -26,7 +26,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&locale=en&show_icons=true&theme=dracula&hide_border=false&include_all_commits=true
+          options: username=${{ github.repository_owner }}&locale=en&show_icons=true&theme=dracula&hide_border=false&include_all_commits=true&hide_rank=true&hide=issues,reviews
           path: profile/github-stats.svg
           token: ${{ secrets.GH_STATS_TOKEN }}
 
