@@ -86,7 +86,7 @@
   />
 
   <img
-    src="./profile/pacman.svg"
+    src="./profile/pacman-dark.svg"
     alt="Pac-Man contribution graph"
   />
 </picture>
