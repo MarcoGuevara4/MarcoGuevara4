@@ -63,10 +63,11 @@
   />
 
   <img
-    src="https://raw.githubusercontent.com/MarcoGuevara4/MarcoGuevara4/languages-output/languages.svg"
-    height="160"
-    alt="Most used languages"
-  />
+  src="https://raw.githubusercontent.com/MarcoGuevara4/MarcoGuevara4/languages-output/languages.svg"
+  height="150"
+  alt="Most used languages"
+/>
+
 
 </div>
 
@@ -86,7 +87,8 @@
   />
 
   <img
-    alt="Pac-Man contribution graph"
     src="https://raw.githubusercontent.com/MarcoGuevara4/MarcoGuevara4/pacman-output/pacman-contribution-graph.svg"
+    alt="Pac-Man contribution graph"
   />
 </picture>
+
