@@ -45,7 +45,7 @@
 ###
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/marcoxguevara/" target="_blank">
+  <a href="https://www.linkedin.com/in/marcoxxguevara/" target="_blank">
     <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="28" alt="LinkedIn" />
   </a>
 </div>
@@ -57,9 +57,9 @@
 <div align="center">
 
   <img
-    src="https://streak-stats.demolab.com?user=MarcoGuevara4&locale=en&mode=daily&theme=dracula&hide_border=false&border_radius=5"
+    src="./profile/github-stats.svg"
     height="160"
-    alt="GitHub streak"
+    alt="GitHub statistics"
   />
 
   <img
